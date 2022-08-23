@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* at 980px the links will become pop up side menu*/
+@media only screen and (max-width: 980px) {
+    
+}
+
+@media only screen and (max-width: 480px){
+    
+}
+
+@media only screen and (max-width: 320px){
+
+}
