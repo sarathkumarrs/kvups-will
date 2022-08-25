@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*attributes directly added to tags below*/
+a{
+    text-decoration: none;
+}
+
+/*general classes*/
+
+.padder{
+    padding: 0px 60px;
+}
+.padx{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.flexy{
+    display: flex;
+}
+.spacer{
+    display: flex;
+    justify-content: space-between;
+}
+.white_bg{
+    background-color: white;
+}
+.white_text{
+    color: white;
+}
+.green_text{
+    color: rgb(126, 178, 68);
+    background: linear-gradient(to top, rgb(126, 178, 68), rgb(67, 198, 172));
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.buttony{
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(126, 178, 68), rgb(67, 198, 172));
+    padding: 10px 40px;
+    border-radius: 35px;
+    border: 1px solid white;
+    align-self: center;
+}  
+/*header classes*/
+
+.head_top_bg{
+    background:linear-gradient(to right, rgb(126, 178, 68), rgb(67, 198, 172));
+    padding: 10px 10%;
+    font-size: 20px;
+}
+.header_bg{
+    height: 120px;
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+}
+.header_bg h1{
+    color: rgb(126, 178, 68);
+}
+.menuer a{
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+
+/*header ids*/
+#bluey{
+    color: rgb(0, 0, 201);
+    background-color: white;
+    border-radius: 10px;
+}
+#redy{
+    color: rgb(201, 0, 0);
+    background-color: white;
+    border-radius: 10px;
+}
+#active_a{
+    color: white;
+    background-color: rgb(126, 178, 68);
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+
+
+/*first section classes*/
+.first_section{
+    background-image: url("https://kvups.in/images/spotlight.jpg"); /* to add image as background from a local storage or the internet*/
+    background-color: rgb(126, 178, 68);   /*added in case the background image is not available*/
+    background-size: cover;    /*spreads the image accross the whole page width and height*/
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 550px;
+    text-align: center;
+   
+    
+}
+
+/*first section ids*/
+#first_section div{
+    height: 550px;
+    background-color: rgba(0, 0, 0,0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+#first_section div h1{
+    font-size: 50px;
+}
+#first_section div p{
+    font-size: 20px;
+    color: white;
+    margin: 20px;
+}
+
+
+
+
+/*second section classes*/
+.second_img{
+    width: 50%;
+}
+.second_img img{
+    width: 100%; 
+}
+.second_text{
+    padding: 65px  0;
+    width: 30%;
+    text-align: right;
+    margin-right: 10%;
+    display: block;
+}
+.second_text h1{
+    
+    font-size: 45px;
+    font-weight: bold;
+    padding: 0px 0px 20px 0px;
+}
+.second_text p{
+   
+    text-align: justify;
+    font-size: 14px;
+    margin: 35px o;
+    line-height: 25px;
+}
+
+/*second section ids*/
+#second_section{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+/*third section classes*/
+.third_section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.widey{
+    grid-column: span 1;
+}
+.mission{
+    background-image: url(https://kvups.in/images/our-mission.jpg);
+    background-size: cover;
+    padding: 43px 0;
+    text-align: center;
+}
+.vision{
+    background-image: url(https://kvups.in/images/our-vision.jpg);
+    background-size: cover;
+    padding: 43px 0;
+    text-align: center;
+}
+
+/*third section ids*/
+#third_section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(245, 245, 245);
+}
+#third_section div h1{
+    font-size: 45px;
+    
+}
+#third_section div p{
+    padding: 30px 15px;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+/*fourth section classes*/
+.fourth_section{
+    background-image: url(https://kvups.in/images/our-accadamics.jpg);
+    background-color: rgb(126, 178, 68);   /*added in case the background image is not available*/
+    background-size: cover;    /*spreads the image accross the whole page width and height*/
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 522px;
+    text-align:right;
+}
+
+
+/*fourth section ids*/
+
+
+
+/*footer classes*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* at 980px the links will become pop up side menu*/
+@media only screen and (max-width: 980px) {
+    
+}
+
+/* at 480px some decorative elements are removed from page to optimize it for a small screen width*/
+@media only screen and (max-width: 480px){
+    
+}
+
+/*at 320px the page will start becomming smaller as the width is reduced*/
+@media only screen and (max-width: 320px){
+
+}
