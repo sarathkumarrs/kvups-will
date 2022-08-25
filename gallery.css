@@ -1,0 +1,116 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'nunitoregular', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+a{
+    text-decoration: none;
+   
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: linear-gradient(to right, #7eb244, #43C6AC);
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+.subhead ul{
+    display: flex;
+    gap: 40px;
+    margin: 10px;
+    padding: 10px;
+    list-style: none; /*to remove test dot*/
+
+}
+
+.subhead ul a{
+    color:#555;
+
+}
+#kvups img{
+     width: 90px;
+     margin: 10px;
+     padding: 10px;
+
+}
+#innerspotlight{
+    background-image: url("https://kvups.in/images/inner-spotlight-bg.jpg");
+    background-size: cover;
+    height: 350px;
+    background-position: center;
+    text-align: center;
+   
+}
+#innerspotlight h1{
+    padding-top: 170px;
+    font-size: 65px;
+    color: white;
+    font-weight: bold;
+    font-family:'american_captainregular';
+
+}
+
+
+/*ACADEMICS CSS*/
+
+.clubaward{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 20px;
+    padding: 50px;
+
+}
+
+.clubactivity{
+    grid-column:span 1;
+    padding: 50px;
+
+
+    
+    
+
+
+}
+#imgone{
+    display: flex;
+    background: #f5f5f5;
+    
+}
+
+#imgone img{
+    height: 150px;
+    width: 150px;
+
+}
+.footer{
+    background: linear-gradient(to right, #7eb244, #43C6AC);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px;
+    height: 150px;
+    gap: 20px;
+    color: white;
+}
+.footerchild{
+    grid-column: span 1 ;
+   
+}
+.footerlast{
+    background: #43434f;
+    height: 30px;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
