@@ -59,7 +59,39 @@ a{
     font-family:'american_captainregular';
 
 }
+.photovideomela{
+    width: 384px;
+    border: 1px solid green;
+    margin: 15px auto;
 
+}
+.photovideomela a{
+    color: #555;
+}
+#green{
+    color: green;
+}
+.photovideosub{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.imagecls{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: 10px;
+    
+}
+.imagesubcls img{
+    width: 100%;
+
+}
+.imagesubcls h4{
+    text-align: center;
+}
 
 /*ACADEMICS CSS*/
 
@@ -93,6 +125,9 @@ a{
     width: 150px;
 
 }
+#imgone h3{
+    padding: 10px;
+}
 .footer{
     background: linear-gradient(to right, #7eb244, #43C6AC);
     display: grid;
@@ -113,4 +148,84 @@ a{
     text-align: center;
     padding: 20px 0;
 
+}
+/*activity CSS*/
+
+.activitybox{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 10px;
+    padding: 50px;
+    
+   
+
+}
+.boxone{
+  grid-column:span 1; 
+  display: flex;
+  margin: 15px;
+  gap: 10px;
+  border: 2px solid #7eb244 ;
+  
+  
+    
+
+}
+.kallarafest{
+    width: 80%;
+    text-align: justify;
+    line-height: 20px;
+    min-height: 450px;
+}   
+.kallarafest h4{
+    text-align: center;
+
+} 
+
+.orange{
+    background-color: orange;
+    width: 8%;
+    
+    
+}
+.blue{
+    background-color: skyblue;
+     width: 8%;
+    
+}   
+.color3{
+    background-color: #009688;
+     width: 8%;
+     
+}  
+.color4{
+    background-color: #2196F3;
+     width: 8%;
+     
+}
+.color5{
+    background-color: #3F51B5;
+     width: 8%;
+     
+}
+.color6{
+    background-color: #673AB7;
+     width: 8%;
+     
+}
+.color7{
+    background-color:#F44336;
+     width: 8%;
+     
+}
+.color8{
+    background-color:#E91E63;
+     width: 8%;
+      
+}
+.color9{
+    background-color:#9C27B0;
+     width: 8%;
+      
 }
