@@ -1,10 +1,20 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 /*attributes directly added to tags below*/
 a{
     text-decoration: none;
+}
+h1{
+    font-family: 'american_captainregular';
+}
+h3{
+    font-family: 'american_captainregular';
+}
+p{
+    font-family: 'nunitoregular', Arial, Helvetica, sans-serif;
 }
 
 /*general classes*/
@@ -46,6 +56,54 @@ a{
     border: 1px solid white;
     align-self: center;
 }  
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px;
+}
+.cell1{
+    grid-column: span 6;
+}
+.cell2{
+    grid-column: span 6;
+}
+.cell3{
+    grid-column: span 4;
+}
+.h1_size1{
+    font-size: 45px;
+    font-weight: bold;
+    
+}
+.h1_size2{
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.h1_size3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.h1_size4{
+    font-size: 14px;
+}
+.p_size1{
+    font-size: 14px;
+    line-height: 25px;
+    
+}
+.text_center{
+    text-align: center;
+}
+.text_right{
+    text-align: right;
+}
+.text_justify{
+    text-align: justify;
+}
+
+
+
 /*header classes*/
 
 .head_top_bg{
@@ -66,9 +124,14 @@ a{
     color: rgb(0, 0, 0);
     padding: 5px;
 }
-
+.menu_button{
+    display: none;
+}
 
 /*header ids*/
+#whitey{
+    color: white;
+}
 #bluey{
     color: rgb(0, 0, 201);
     background-color: white;
@@ -85,7 +148,9 @@ a{
     padding: 10px 25px;
     border-radius: 10px;
 }
-
+#active_a:hover{
+    color: rgb(160, 255, 152);
+}
 
 
 /*first section classes*/
@@ -119,8 +184,6 @@ a{
 }
 
 
-
-
 /*second section classes*/
 .second_img{
     width: 50%;
@@ -135,12 +198,8 @@ a{
     margin-right: 10%;
     display: block;
 }
-.second_text h1{
+
     
-    font-size: 45px;
-    font-weight: bold;
-    padding: 0px 0px 20px 0px;
-}
 .second_text p{
    
     text-align: justify;
@@ -159,14 +218,6 @@ a{
 
 
 /*third section classes*/
-.third_section{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
-.widey{
-    grid-column: span 1;
-}
 .mission{
     background-image: url(https://kvups.in/images/our-mission.jpg);
     background-size: cover;
@@ -186,10 +237,7 @@ a{
     padding-bottom: 50px;
     background-color: rgb(245, 245, 245);
 }
-#third_section div h1{
-    font-size: 45px;
     
-}
 #third_section div p{
     padding: 30px 15px;
     text-align: center;
@@ -204,17 +252,137 @@ a{
     background-position: top;
     background-repeat: no-repeat;
     height: 522px;
-    text-align:right;
 }
 
+.image3{
+    width: 50%;
+}
+.text4{
+    width: 50%;
+}
 
 /*fourth section ids*/
 
+#fourth_section{
+    padding-top: 50px;
+    display: flex;
+    
+}
+#fourth_section div{
+    display: flex;
+    flex-direction: column;
+}
+#fourth_section div p{
+    color: white;
 
+}
+#fourth_section div a{
+    align-self: flex-start;
+}
+#fourth_section div img{
+    max-width: 30%;
+    max-height: 100%;
+    display: block;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+}
+ /*fifth section classes*/
+ .fifth_section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+ }
+ .image5{
+    width: 45%;
+ }
+ .image5 img{
+    max-width: 100%;
+ }
+ .title1{
+    width: 55%;
+    background: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 
+ }
+ .text5{
+    text-align: justify;
+ }
+/*sixteenth section classes*/
+.pad_right{
+    padding-top: 50px;
+    padding-right: 10%;
+}
+.width16{
+    width: 50%;
+}
+.width16 iframe{
+    display: block;
+}
+/*sixteenth section ids*/
+#sixteenth_section div{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+#sixteenth_section div a{
+    color: black;
+    display: block;
+}
+#sixteenth_section div a i{
+    color: rgb(126, 178, 68);
+}
+#sixteenth_section div p i{
+    color: rgb(126, 178, 68);
+}
 /*footer classes*/
 
 
+
+.foot_bg1{
+    background:linear-gradient(to right, rgb(126, 178, 68), rgb(67, 198, 172));
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.foot_bg2{
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+}
+.div_width1{
+    width:40%;
+}
+.div_width2{
+    padding: 20px;
+}
+.div_width2 a{
+    color: white;
+}
+
+
+
+
+
+
+
+/*classes in events.html is given here*/
+.events_section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.cell_events{
+    grid-column: span 4;
+}
+.img_events img{
+    width: 100%;
+}
+
+.events_bg{
+    background-color: rgb(245, 245, 245);
+}
 
 
 
@@ -226,13 +394,39 @@ a{
 
 
 /* at 980px the links will become pop up side menu*/
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1150px) {
+    .padx{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .menuer{
+        display: none;
+    }
+    .menu_button{
+        display: block;
+    }
+    .image3{
+        display: none;
+    }
+    .text4{
+        width: 100%;
+    }
+    .cell3{
+        grid-column: span 6;
+    }
     
 }
 
 /* at 480px some decorative elements are removed from page to optimize it for a small screen width*/
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 720px){
+    .padx{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
     
+    .cell3{
+        grid-column: span 12;
+    }
 }
 
 /*at 320px the page will start becomming smaller as the width is reduced*/
