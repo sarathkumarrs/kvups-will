@@ -224,7 +224,7 @@ p{
 }
 .second_text{
     padding: 65px  0;
-    width: 30%;
+   
     text-align: right;
     margin-right: 10%;
     display: block;
@@ -656,6 +656,11 @@ padding-bottom: 50px;
 
 /* at 980px the links will become pop up side menu*/
 @media only screen and (max-width: 1150px) {
+    .second_img{
+        display: none;
+
+    }
+    
     .padx{
         padding-left: 5%;
         padding-right: 5%;
