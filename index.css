@@ -1,10 +1,23 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 /*attributes directly added to tags below*/
 a{
     text-decoration: none;
+}
+h1{
+    color: rgb(87, 87, 87);
+    font-family: 'Bowlby One', cursive;
+}
+h3{
+    color: rgb(87, 87, 87);
+    font-family: 'Bowlby One', cursive;
+}
+p{
+    color: rgb(87, 87, 87);
+    font-family: 'nunitoregular', Arial, Helvetica, sans-serif;
 }
 
 /*general classes*/
@@ -27,10 +40,19 @@ a{
 .white_bg{
     background-color: white;
 }
+.off_white_bg{
+    background-color: #f5f5f5;
+}
+.green_grad_bg{
+    background: linear-gradient(to right, rgb(126, 178, 68), rgb(67, 198, 172));
+}
 .white_text{
     color: white;
 }
 .green_text{
+    color: rgb(126, 178, 68);
+}
+.green_grad{
     color: rgb(126, 178, 68);
     background: linear-gradient(to top, rgb(126, 178, 68), rgb(67, 198, 172));
     -webkit-background-clip:text;
@@ -46,6 +68,54 @@ a{
     border: 1px solid white;
     align-self: center;
 }  
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px;
+}
+.cell1{
+    grid-column: span 6;
+}
+.cell2{
+    grid-column: span 6;
+}
+.cell3{
+    grid-column: span 4;
+}
+.h1_size1{
+    font-size: 45px;
+    font-weight: bold;
+    
+}
+.h1_size2{
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.h1_size3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.h1_size4{
+    font-size: 14px;
+}
+.p_size1{
+    font-size: 14px;
+    line-height: 25px;
+    
+}
+.text_center{
+    text-align: center;
+}
+.text_right{
+    text-align: right;
+}
+.text_justify{
+    text-align: justify;
+}
+
+
+
 /*header classes*/
 
 .head_top_bg{
@@ -66,9 +136,14 @@ a{
     color: rgb(0, 0, 0);
     padding: 5px;
 }
-
+.menu_button{
+    display: none;
+}
 
 /*header ids*/
+#whitey{
+    color: white;
+}
 #bluey{
     color: rgb(0, 0, 201);
     background-color: white;
@@ -85,11 +160,14 @@ a{
     padding: 10px 25px;
     border-radius: 10px;
 }
-
+#active_a:hover{
+    color: rgb(160, 255, 152);
+}
 
 
 /*first section classes*/
 .first_section{
+
     background-image: url("https://kvups.in/images/spotlight.jpg"); /* to add image as background from a local storage or the internet*/
     background-color: rgb(126, 178, 68);   /*added in case the background image is not available*/
     background-size: cover;    /*spreads the image accross the whole page width and height*/
@@ -101,13 +179,16 @@ a{
     
 }
 
+
 /*first section ids*/
+
 #first_section div{
     height: 550px;
     background-color: rgba(0, 0, 0,0.35);
     display: flex;
     flex-direction: column;
     justify-content: center; 
+    
 }
 #first_section div h1{
     font-size: 50px;
@@ -117,9 +198,22 @@ a{
     color: white;
     margin: 20px;
 }
+ #first_section {
+     animation-name: switch;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+ }
 
+ @keyframes switch {
+     50% {
+         background-image: url("https://kvups.in/images/spotlight.jpg");
+     }
 
+     50% {
+         background-image: url("https://kvups.in/images/photo15.jpg");
+     }
 
+ }
 
 /*second section classes*/
 .second_img{
@@ -135,12 +229,8 @@ a{
     margin-right: 10%;
     display: block;
 }
-.second_text h1{
+
     
-    font-size: 45px;
-    font-weight: bold;
-    padding: 0px 0px 20px 0px;
-}
 .second_text p{
    
     text-align: justify;
@@ -159,14 +249,6 @@ a{
 
 
 /*third section classes*/
-.third_section{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
-.widey{
-    grid-column: span 1;
-}
 .mission{
     background-image: url(https://kvups.in/images/our-mission.jpg);
     background-size: cover;
@@ -186,10 +268,7 @@ a{
     padding-bottom: 50px;
     background-color: rgb(245, 245, 245);
 }
-#third_section div h1{
-    font-size: 45px;
     
-}
 #third_section div p{
     padding: 30px 15px;
     text-align: center;
@@ -204,17 +283,367 @@ a{
     background-position: top;
     background-repeat: no-repeat;
     height: 522px;
-    text-align:right;
 }
 
+.image4 {
+    width: 50%;
+    height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+}
+.text4{
+    width: 50%;
+}
+.cell5 {
+    grid-column: span 6;
+}
 
 /*fourth section ids*/
 
+#fourth_section{
+    padding-top: 50px;
+    display: flex;
+    
+}
+#fourth_section div{
+    display: flex;
+    flex-direction: column;
+}
+#fourth_section div p{
+    color: white;
+
+}
+#fourth_section div a{
+    align-self: flex-start;
+}
+#fourth_section div img{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+        flex-direction: column;
+        justify-content: end;
+}
+ /*fifth section classes*/
+ .fifth_section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+ }
+ .image5{
+    width: 45%;
+ }
+ .image5 img{
+    max-width: 100%;
+ }
+ .title1{
+    width: 55%;
+    background: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ .text5{
+    text-align: justify;
+ }
+/*sixth section classes*/
+.sixth_section {
+    background: #f5f5f5;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sixth_section div img {
+    max-width: 100%;
+
+}
+
+.cell6 {
+    grid-column: span 4;
+    gap: 20px;
+}
+
+/*seventh section*/
+.seventh_section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: linear-gradient(to right, rgb(126, 178, 68), rgb(67, 198, 172));
+    text-align: center;
+}
+
+/*eighth section classes*/
+.eighth_section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.eighth_section div{
+    gap: 20px;
+}
+.eighth_section div div{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0,0.35);
+    border-radius: 15px;
+}
+.eighth_section div div p{
+    text-align: justify;
+}
+.eighth_section div div a img{
+    width: 150px;
+
+}
+.cell8{
+    grid-column: span 6;
+}
 
 
+/*ninth section classes*/
+.ninth_section{
+    background-image: url("https://kvups.in/images/Testimonials-bg.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    
+}
+.cell9{
+    background-color: white;
+    grid-column: span 6;
+    height: 150px;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 10px;
+}
+.pic img{
+    height:150px;
+    width: 150px;
+}
+.texter{
+    display: block;
+    align-self: center;
+}
+/*tenth section classes*/
+
+/*eleventh section classes*/
+.eleventh_section{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    gap: 30px;
+}
+.cell11{
+    grid-column: span 6;
+}
+
+/*twelveth_section*/
+.twelveth_section{
+background-image: url("https://kvups.in/images/countdown-bg.jpg");
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.cell12{
+    grid-column: span 3;
+}
+.image121{
+    display: inline-block;
+    width: 114px;
+    height: 90px;
+    background: url("https://kvups.in/images/sprite.png");
+    background-position: -3px -42px;
+    margin-bottom: 18px;
+}
+.image122{
+    display: inline-block;
+    width: 94px;
+    height: 94px;
+    background: url("https://kvups.in/images/sprite.png");
+    background-position: -127px -36px;
+    margin-bottom: 18px;
+}
+.image123{
+    display: inline-block;
+    width: 82px;
+    height: 82px;
+    background: url("https://kvups.in/images/sprite.png");
+    background-position: -345px -38px;
+    margin-bottom: 18px;
+}
+.image124{
+    display: inline-block;
+    width: 74px;
+    height: 91px;
+    background: url("https://kvups.in/images/sprite.png");
+    background-position: -345px -38px;
+    margin-bottom: 18px;
+}
+
+/*thirteenth section*/
+.thirteenth_section{
+padding-top: 50px;
+padding-bottom: 50px;
+text-align: center;
+
+}
+.cell13{
+    grid-column: span 3;
+}
+.image13{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.image131{
+    display: inline-block;
+    width: 51px;
+    height: 42px;
+    background: url("https://kvups.in/images/sprite.png");
+    background-position: -3px -139px;
+}
+.image132{
+    display: inline-block;
+    width: 51px;
+    height: 58px;
+    background: url("https://kvups.in/images/sprite.png") ;
+    background-position: -59px -139px;
+}
+.image133{
+    display: inline-block;
+    width: 49px;
+    height: 49px;
+    background: url("https://kvups.in/images/sprite.png") ;
+    background-position: -115px -141px;
+}
+.image134{
+    display: inline-block;
+    width: 49px;
+    height: 33px;
+    background: url("https://kvups.in/images/sprite.png") ;
+    background-position: -170px -148px;
+}
+/*fourteenth section classes*/
+.fourteenth_section{
+    background-image: url("https://kvups.in/images/acivities.jpg");
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+.fourteenth_section div img{
+    width: 100%;
+
+}
+/*fifteenth_section*/
+.cell15{
+    grid-column: span 4;
+}
+.bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg a{
+    width: 40%;
+    
+}
+
+.bg151{
+    background-image: url("https://kvups.in/images/video-1.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+.bg152{
+    background-image: url("https://kvups.in/images/video2.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+.bg153{
+    background-image: url("https://kvups.in/images/video-3.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+/*sixteenth section classes*/
+.pad_right{
+    padding-top: 50px;
+    padding-right: 10%;
+}
+.width16{
+    width: 50%;
+}
+.width16 iframe{
+    display: block;
+}
+/*sixteenth section ids*/
+#sixteenth_section div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+#sixteenth_section div a{
+    color: black;
+    display: block;
+}
+#sixteenth_section div a i{
+    color: rgb(126, 178, 68);
+}
+#sixteenth_section div p i{
+    color: rgb(126, 178, 68);
+}
 /*footer classes*/
 
 
+
+.foot_bg1{
+    background:linear-gradient(to right, rgb(126, 178, 68), rgb(67, 198, 172));
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.foot_bg2{
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+}
+.div_width1{
+    width:40%;
+}
+.div_width2{
+    padding: 20px;
+}
+.div_width2 a{
+    color: white;
+}
+
+
+
+
+
+
+
+/*classes in events.html is given here*/
+.events_section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.cell_events{
+    grid-column: span 4;
+}
+.img_events img{
+    width: 100%;
+}
+
+.events_bg{
+    background-color: rgb(245, 245, 245);
+}
 
 
 
@@ -226,13 +655,97 @@ a{
 
 
 /* at 980px the links will become pop up side menu*/
-@media only screen and (max-width: 980px) {
-    
+@media only screen and (max-width: 1150px) {
+    .padx{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .menuer{
+        display: none;
+    }
+    .menu_button{
+        display: block;
+    }
+    .image3{
+        display: none;
+    }
+    .text4{
+        width: 100%;
+    }
+    .image4 {
+       display: none;
+    }
+    .cell3{
+        grid-column: span 6;
+    }
+    .cell5 {
+        grid-column: span 12;
+    }
+
+    .cell6 {
+        grid-column: span 6;
+    }
+    .cell8{
+        grid-column: span 12;
+        max-width: 600px;
+        display: block;
+        justify-self: center;
+        
+    }
+    .cell9{
+        grid-column: span 12;
+    }
+    .cell_events{
+        grid-column: span 6;
+    }
+    .cell11{
+        grid-column: span 12;
+    }
+    .cell12{
+        grid-column: span 6;
+    }
+    .cell13{
+        grid-column: span 6;
+    }
+    .cell15{
+        grid-column: span 6;
+
+    }
+    .width16{
+        width: 100%;
+    }
+
+
+    #sixteenth_section{
+        display: block;
+    }
+
 }
 
 /* at 480px some decorative elements are removed from page to optimize it for a small screen width*/
-@media only screen and (max-width: 480px){
-    
+@media only screen and (max-width: 720px){
+    .padx{
+        padding-left: 3%;
+        padding-right: 3%;
+    }   
+    .cell3{
+        grid-column: span 12;
+    }
+    .cell6 {
+        grid-column: span 12;
+    }
+    .cell12{
+        grid-column: span 12;
+    }
+    .cell_events{
+        grid-column: span 12;
+    }
+    .cell13{
+        grid-column: span 12;
+    }
+    .cell15{
+        grid-column: span 12;
+    }
 }
 
 /*at 320px the page will start becomming smaller as the width is reduced*/
