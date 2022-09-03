@@ -73,6 +73,11 @@ p{
     grid-template-columns: repeat(12,1fr);
     gap: 20px;
 }
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    
+}
 .cell1{
     grid-column: span 6;
 }
@@ -216,15 +221,12 @@ p{
  }
 
 /*second section classes*/
-.second_img{
-    width: 50%;
-}
 .second_img img{
     width: 100%; 
 }
 .second_text{
-    padding: 65px  0;
-    width: 30%;
+   padding-top: 65px;
+   padding-bottom: 65px;
     text-align: right;
     margin-right: 10%;
     display: block;
@@ -286,14 +288,14 @@ p{
 }
 
 .image4 {
-    width: 50%;
+    
     height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 .text4{
-    width: 50%;
+    
 }
 .cell5 {
     grid-column: span 6;
@@ -303,13 +305,10 @@ p{
 
 #fourth_section{
     padding-top: 50px;
-    display: flex;
+    
     
 }
-#fourth_section div{
-    display: flex;
-    flex-direction: column;
-}
+
 #fourth_section div p{
     color: white;
 
@@ -439,12 +438,14 @@ p{
 /*twelveth_section*/
 .twelveth_section{
 background-image: url("https://kvups.in/images/countdown-bg.jpg");
+background-size: cover;
 padding-top: 50px;
 padding-bottom: 50px;
 }
 .cell12{
     grid-column: span 3;
 }
+
 .image121{
     display: inline-block;
     width: 114px;
@@ -464,9 +465,9 @@ padding-bottom: 50px;
 .image123{
     display: inline-block;
     width: 82px;
-    height: 82px;
+    height: 92px;
     background: url("https://kvups.in/images/sprite.png");
-    background-position: -345px -38px;
+    background-position: -237px -42px;
     margin-bottom: 18px;
 }
 .image124{
@@ -651,7 +652,12 @@ padding-bottom: 50px;
 
 
 
-
+@media only screen and (min-width: 1150px) {
+    .border_right{
+        border-right: 2px solid white;
+    
+    }
+}
 
 
 /* at 980px the links will become pop up side menu*/
@@ -666,6 +672,9 @@ padding-bottom: 50px;
     .menu_button{
         display: block;
     }
+    .second_img{
+        display: none;
+    }
     .image3{
         display: none;
     }
@@ -674,6 +683,9 @@ padding-bottom: 50px;
     }
     .image4 {
        display: none;
+    }
+    .cell1{
+        grid-column: span 12;
     }
     .cell3{
         grid-column: span 6;
@@ -720,6 +732,16 @@ padding-bottom: 50px;
         display: block;
     }
 
+    .border_bottom{
+        border-bottom: 2px solid white;
+    }
+
+}
+@media only screen and (max-width: 1150px) and (min-width: 720px ){
+    .border_right2{
+        border-right: 2px solid white;
+    
+    }
 }
 
 /* at 480px some decorative elements are removed from page to optimize it for a small screen width*/
@@ -745,6 +767,12 @@ padding-bottom: 50px;
     }
     .cell15{
         grid-column: span 12;
+    }
+    .border_bottom2{
+        border-bottom: 2px solid white;
+    }
+    .border_right2{
+        border-right: opx solid white;
     }
 }
 
