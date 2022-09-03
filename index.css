@@ -8,12 +8,15 @@ a{
     text-decoration: none;
 }
 h1{
-    font-family: 'american_captainregular';
+    color: rgb(87, 87, 87);
+    font-family: 'Bowlby One', cursive;
 }
 h3{
-    font-family: 'american_captainregular';
+    color: rgb(87, 87, 87);
+    font-family: 'Bowlby One', cursive;
 }
 p{
+    color: rgb(87, 87, 87);
     font-family: 'nunitoregular', Arial, Helvetica, sans-serif;
 }
 
@@ -37,10 +40,19 @@ p{
 .white_bg{
     background-color: white;
 }
+.off_white_bg{
+    background-color: #f5f5f5;
+}
+.green_grad_bg{
+    background: linear-gradient(to right, rgb(126, 178, 68), rgb(67, 198, 172));
+}
 .white_text{
     color: white;
 }
 .green_text{
+    color: rgb(126, 178, 68);
+}
+.green_grad{
     color: rgb(126, 178, 68);
     background: linear-gradient(to top, rgb(126, 178, 68), rgb(67, 198, 172));
     -webkit-background-clip:text;
@@ -155,6 +167,7 @@ p{
 
 /*first section classes*/
 .first_section{
+
     background-image: url("https://kvups.in/images/spotlight.jpg"); /* to add image as background from a local storage or the internet*/
     background-color: rgb(126, 178, 68);   /*added in case the background image is not available*/
     background-size: cover;    /*spreads the image accross the whole page width and height*/
@@ -166,13 +179,16 @@ p{
     
 }
 
+
 /*first section ids*/
+
 #first_section div{
     height: 550px;
     background-color: rgba(0, 0, 0,0.35);
     display: flex;
     flex-direction: column;
     justify-content: center; 
+    
 }
 #first_section div h1{
     font-size: 50px;
@@ -182,7 +198,22 @@ p{
     color: white;
     margin: 20px;
 }
+ #first_section {
+     animation-name: switch;
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+ }
 
+ @keyframes switch {
+     50% {
+         background-image: url("https://kvups.in/images/spotlight.jpg");
+     }
+
+     50% {
+         background-image: url("https://kvups.in/images/photo15.jpg");
+     }
+
+ }
 
 /*second section classes*/
 .second_img{
@@ -254,11 +285,18 @@ p{
     height: 522px;
 }
 
-.image3{
+.image4 {
     width: 50%;
+    height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
 }
 .text4{
     width: 50%;
+}
+.cell5 {
+    grid-column: span 6;
 }
 
 /*fourth section ids*/
@@ -280,12 +318,11 @@ p{
     align-self: flex-start;
 }
 #fourth_section div img{
-    max-width: 30%;
+    max-width: 100%;
     max-height: 100%;
-    display: block;
-    position: relative;
-    bottom: 0px;
-    right: 0px;
+    display: flex;
+        flex-direction: column;
+        justify-content: end;
 }
  /*fifth section classes*/
  .fifth_section{
@@ -304,13 +341,234 @@ p{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-
+    align-items: flex-start;
  }
  .text5{
     text-align: justify;
  }
+/*sixth section classes*/
+.sixth_section {
+    background: #f5f5f5;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sixth_section div img {
+    max-width: 100%;
+
+}
+
+.cell6 {
+    grid-column: span 4;
+    gap: 20px;
+}
+
+/*seventh section*/
+.seventh_section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: linear-gradient(to right, rgb(126, 178, 68), rgb(67, 198, 172));
+    text-align: center;
+}
+
+/*eighth section classes*/
+.eighth_section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.eighth_section div{
+    gap: 20px;
+}
+.eighth_section div div{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0,0.35);
+    border-radius: 15px;
+}
+.eighth_section div div p{
+    text-align: justify;
+}
+.eighth_section div div a img{
+    width: 150px;
+
+}
+.cell8{
+    grid-column: span 6;
+}
+
+
+/*ninth section classes*/
+.ninth_section{
+    background-image: url("https://kvups.in/images/Testimonials-bg.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    
+}
+.cell9{
+    background-color: white;
+    grid-column: span 6;
+    height: 150px;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 10px;
+}
+.pic img{
+    height:150px;
+    width: 150px;
+}
+.texter{
+    display: block;
+    align-self: center;
+}
+/*tenth section classes*/
+
+/*eleventh section classes*/
+.eleventh_section{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    gap: 30px;
+}
+.cell11{
+    grid-column: span 6;
+}
+
+/*twelveth_section*/
+.twelveth_section{
+background-image: url("https://kvups.in/images/countdown-bg.jpg");
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.cell12{
+    grid-column: span 3;
+}
+.image121{
+    display: inline-block;
+    width: 114px;
+    height: 90px;
+    background: url("https://kvups.in/images/sprite.png");
+    background-position: -3px -42px;
+    margin-bottom: 18px;
+}
+.image122{
+    display: inline-block;
+    width: 94px;
+    height: 94px;
+    background: url("https://kvups.in/images/sprite.png");
+    background-position: -127px -36px;
+    margin-bottom: 18px;
+}
+.image123{
+    display: inline-block;
+    width: 82px;
+    height: 82px;
+    background: url("https://kvups.in/images/sprite.png");
+    background-position: -345px -38px;
+    margin-bottom: 18px;
+}
+.image124{
+    display: inline-block;
+    width: 74px;
+    height: 91px;
+    background: url("https://kvups.in/images/sprite.png");
+    background-position: -345px -38px;
+    margin-bottom: 18px;
+}
+
+/*thirteenth section*/
+.thirteenth_section{
+padding-top: 50px;
+padding-bottom: 50px;
+text-align: center;
+
+}
+.cell13{
+    grid-column: span 3;
+}
+.image13{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.image131{
+    display: inline-block;
+    width: 51px;
+    height: 42px;
+    background: url("https://kvups.in/images/sprite.png");
+    background-position: -3px -139px;
+}
+.image132{
+    display: inline-block;
+    width: 51px;
+    height: 58px;
+    background: url("https://kvups.in/images/sprite.png") ;
+    background-position: -59px -139px;
+}
+.image133{
+    display: inline-block;
+    width: 49px;
+    height: 49px;
+    background: url("https://kvups.in/images/sprite.png") ;
+    background-position: -115px -141px;
+}
+.image134{
+    display: inline-block;
+    width: 49px;
+    height: 33px;
+    background: url("https://kvups.in/images/sprite.png") ;
+    background-position: -170px -148px;
+}
+/*fourteenth section classes*/
+.fourteenth_section{
+    background-image: url("https://kvups.in/images/acivities.jpg");
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+.fourteenth_section div img{
+    width: 100%;
+
+}
+/*fifteenth_section*/
+.cell15{
+    grid-column: span 4;
+}
+.bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg a{
+    width: 40%;
+    
+}
+
+.bg151{
+    background-image: url("https://kvups.in/images/video-1.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+.bg152{
+    background-image: url("https://kvups.in/images/video2.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+.bg153{
+    background-image: url("https://kvups.in/images/video-3.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
 /*sixteenth section classes*/
 .pad_right{
     padding-top: 50px;
@@ -324,6 +582,8 @@ p{
 }
 /*sixteenth section ids*/
 #sixteenth_section div{
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -372,6 +632,7 @@ p{
 .events_section{
     padding-top: 50px;
     padding-bottom: 50px;
+    text-align: center;
 }
 .cell_events{
     grid-column: span 4;
@@ -411,10 +672,54 @@ p{
     .text4{
         width: 100%;
     }
+    .image4 {
+       display: none;
+    }
     .cell3{
         grid-column: span 6;
     }
-    
+    .cell5 {
+        grid-column: span 12;
+    }
+
+    .cell6 {
+        grid-column: span 6;
+    }
+    .cell8{
+        grid-column: span 12;
+        max-width: 600px;
+        display: block;
+        justify-self: center;
+        
+    }
+    .cell9{
+        grid-column: span 12;
+    }
+    .cell_events{
+        grid-column: span 6;
+    }
+    .cell11{
+        grid-column: span 12;
+    }
+    .cell12{
+        grid-column: span 6;
+    }
+    .cell13{
+        grid-column: span 6;
+    }
+    .cell15{
+        grid-column: span 6;
+
+    }
+    .width16{
+        width: 100%;
+    }
+
+
+    #sixteenth_section{
+        display: block;
+    }
+
 }
 
 /* at 480px some decorative elements are removed from page to optimize it for a small screen width*/
@@ -422,9 +727,23 @@ p{
     .padx{
         padding-left: 3%;
         padding-right: 3%;
-    }
-    
+    }   
     .cell3{
+        grid-column: span 12;
+    }
+    .cell6 {
+        grid-column: span 12;
+    }
+    .cell12{
+        grid-column: span 12;
+    }
+    .cell_events{
+        grid-column: span 12;
+    }
+    .cell13{
+        grid-column: span 12;
+    }
+    .cell15{
         grid-column: span 12;
     }
 }
